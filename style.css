@@ -1,0 +1,360 @@
+@font-face {
+    font-family: 'VivoType';
+    src: url('Fonte VivoType/TTF/VivoTypeLight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'VivoType';
+    src: url('Fonte VivoType/TTF/VivoTypeRegular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'VivoType';
+    src: url('Fonte VivoType/TTF/VivoTypeMedium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'VivoType';
+    src: url('Fonte VivoType/TTF/VivoTypeBold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+/* Ambas as seções ficam alinhadas à direita */
+.topo-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    flex-wrap: wrap; /* ajuda com responsividade em telas pequenas */
+}
+
+/* Agrupa título + subtítulo à esquerda */
+.bloco-esquerda {
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* espaço entre os blocos */
+}
+
+.iparceiros{
+    align-items: center;
+}
+
+/* Título */
+.titulo {
+    background-color: #fdfdfd;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 12px 16px;         /* diminuído */
+    font-weight: bold;
+    font-size: 1.5rem;          /* um pouco menor */
+    border-radius: 14px;         /* mais sutil */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.12);
+    margin: 0;
+    max-width: 600px;         /* limite de largura */
+    width: 100%;
+}
+
+.comple1 {
+    background-color:rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+    padding: 10px 16px;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 14px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+    margin: 0;
+    max-width: 700px;         /* limite de largura */
+    width: 100%;
+}
+
+.comple {
+    background-color:rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+    padding: 10px 16px;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 14px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+    margin: 0;
+    max-width: 700px;         /* limite de largura */
+    width: 100%;
+}
+
+/* Texto explicativo */
+.txt {
+    background: rgba(255, 255, 255, 0.8);
+    color: #000;
+    text-align: left;
+    padding: 8px 14px;
+    font-weight: 500;
+    font-size: 0.95rem;
+    border-radius: 14px;
+    box-shadow: 0 0 80px rgba(0, 0, 0, 0.1);
+    margin: 10px auto 0 auto;
+    max-width: 600px;
+    width: 100%;
+    line-height: 1.4;
+}
+
+.txt p.titletxt {
+    margin: -8px -14px 10px -14px; /* Remove padding interno da .txt para ocupar toda a faixa */
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.35); /* Faixa mais escura */
+    padding: 10px 14px;
+    border-radius: 10px 10px 0 0; /* Arredonda só o topo */
+    width: calc(100% + 28px); /* Compensa o padding da .txt */
+}
+
+.txt ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 por linha */
+    gap: 18px;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.txt li {
+    list-style: none;
+    background: rgba(255,255,255,0.9);
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    text-align: left; /* garante alinhamento à esquerda */
+}
+
+.txt li img {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.txt li span {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 4px;
+    font-size: 1rem;
+}
+
+/* ============================
+   RESPONSIVIDADE DO GRID
+=============================== */
+@media (max-width: 992px) {
+    .txt ul {
+        grid-template-columns: repeat(2, 1fr); /* 2 por linha */
+    }
+}
+
+@media (max-width: 600px) {
+    .txt ul {
+        grid-template-columns: repeat(1, 1fr); /* 1 por linha */
+    }
+}
+
+
+/* Logo */
+.logo-direita {
+    height: 60px;
+    width: auto;
+    vertical-align: middle;     
+    align-self: flex-start;     
+}
+
+.logo-superior {
+    height: 60px;
+    width: auto;
+    position: absolute;
+    top: 10px;    /* Distância do topo */
+    left: 10px;  /* Distância da direita */
+    z-index: 100; /* Garante que fique acima de outros elementos */
+}
+
+.logos-inferior {
+  position: absolute;
+  bottom: 10px;   /* ajuste a distância do rodapé */
+  right: 30px;    /* ajuste a distância da borda direita */
+  z-index: 1000;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/* Camada da imagem de fundo */
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+    /* Altura controlada */
+    height: 100vh; /* ou 90vh se quiser deixar uma barrinha embaixo */
+
+    /*background-image: url('imagens/imagem_final.png');*/
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; /* 👈 muda de cover para contain */
+    
+    z-index: -1;
+    pointer-events: none; /* evita que ela interfira com cliques */
+}
+
+
+/* Remove background do body agora */
+body {
+    font-size: 16px;
+    padding: 10px;
+    font-family: 'VivoType', Arial, sans-serif;
+    margin: 0;
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 80px; /* espaço para a logo no rodapé */
+}
+
+/* Bloco central com transparência */
+.container.bloco-central {
+    max-width: 600px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 14px;
+    margin: 10px auto 0 auto; /* Esse centraliza horizontalmente */
+    box-shadow: 0 0 80px rgba(0, 0, 0, 0.1);
+}
+
+.mt-3{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.linha-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* ou space-between, como preferir */
+    align-items: flex-start; /* alinha os blocos pelo topo */
+    gap: 20px; /* espaçamento entre os blocos */
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Ajusta largura dos blocos em telas grandes */
+.linha-flex .bloco-esquerda {
+    flex: 1 1 55%;
+    max-width: 600px;
+}
+
+.linha-flex .bloco-central {
+    flex: 1 1 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+
+/* Responsividade */
+@media (min-width: 600px) {
+    body {
+        font-size: 18px;
+        padding: 20px;
+    }
+}
+
+@media (min-width: 1024px) {
+    body {
+        font-size: 20px;
+        padding: 30px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .bloco-central {
+        margin-left: 200px;
+        margin-right: auto;
+    }
+}
+
+
+/* Tipografia */
+h1 {
+    font-weight: 700;
+}
+
+p.lead {
+    font-weight: 300;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 20px;
+
+  background-color: rgba(255, 255, 255, 0.85); /* fundo branco com transparência */
+  padding: 12px 24px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.social-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white; /* fundo branco para cada ícone */
+  border-radius: 50%;
+  padding: 8px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+.social-links a:hover,
+.social-links a:focus {
+  transform: scale(1.1);
+  outline: none;
+}
+
+.social-links a img {
+  width: 28px;
+  height: 28px;
+  /* sem filtro, mantém a cor original */
+}
+
+/* Deixa o último ícone (site) maior */
+.social-links a.site img {
+  width: 40px;
+  height: 40px;
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+  .social-links {
+    max-width: 260px;
+    gap: 18px;
+    padding: 10px 16px;
+  }
+  
+  .social-links a img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .social-links a.site img {
+    width: 32px;
+    height: 32px;
+  }
+}
