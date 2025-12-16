@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gold Empresas — Parceiro Comercial & Rede de Indicações</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="background"></div>
+
+  <header class="header-site">
+    <div class="container-header">
+
+      <!-- LOGO -->
+      <img src="imagens/Gold_Dourado_preto.png" alt="Logo Gold" class="logo-gold">
+
+      <!-- MENU -->
+      <nav class="menu">
+        <ul>
+          <li><a href="https://www.goldempresas.com.br/">Início</a></li>
+          <li><a href="https://www.goldempresas.com.br/sobre">Sobre</a></li>
+          <li><a href="https://www.goldempresas.com.br/contato">Contato</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- BANNER PARCEIROS -->
+  <section class="banner-parceiros">
+    <img src="imagens/parceiros.png" alt="Parceiros" class="iparceiros">
+  </section>
+
+  <main class="conteudo-site">
+
+    <section class="titulo-secao">
+      <h1 class="titulo">nossos parceiros comerciais</h1>
+      <p class="subtit">Junto com grandes marcas para oferecer o melhor serviço</p>
+    </section>
+
+    <!-- 🔥 NOVO GRID DE EMPRESAS -->
+    <section class="empresas-container">
+
+      <div class="empresa-card">
+        <a href="https://tributojusto.com.br" target="_blank">
+          <img src="imagens/tributojustocwb_logo.png" alt="Tributo Justo">
+        </a>
+        <h3>Tributo Justo</h3>
+        <p>Ajuda empresas do lucro presumido e real a identificar e recuperar tributos pagos indevidamente.</p>
+      </div>
+
+      <div class="empresa-card">
+        <a href="https://www.ademicon.com.br" target="_blank">
+          <img src="imagens/ademicon.SVG" alt="Ademicon">
+        </a>
+        <h3>Ademicon</h3>
+        <p>Administradora de consórcios que oferece planos para imóveis, veículos e serviços, permitindo conquistas
+          planejadas e sem juros.</p>
+      </div>
+
+      <div class="empresa-card">
+        <a href="https://gudenergia.com.br" target="_blank">
+          <img src="imagens/GUD_Energia_Logo.png" alt="Gud Energia">
+        </a>
+        <h3>Gud Energia</h3>
+        <p>Comercializa energia 100% renovável para empresas no mercado livre, com foco em redução de custos e
+          simplificação.</p>
+      </div>
+
+      <div class="empresa-card">
+        <a href="https://www.pluxee.com.br" target="_blank">
+          <img src="imagens/Pluxee.png" alt="Pluxee">
+        </a>
+        <h3>Pluxee</h3>
+        <p>Benefícios corporativos que oferece vales, cartões multibenefícios e soluções flexíveis para funcionários.
+        </p>
+      </div>
+
+      <div class="empresa-card">
+        <a href="https://affaconsultoria.com.br" target="_blank">
+          <img src="imagens/affa.png" alt="AFFA Consultoria">
+        </a>
+        <h3>AFFA Consultoria</h3>
+        <p>Consultoria tributária especializada em produtos monofásicos, ajudando sua empresa a recuperar créditos.</p>
+      </div>
+
+      <!-- FORMULÁRIO -->
+      <div class="empresa-card form-card">
+        <h3>Tenho interesse em:</h3>
+
+        <form
+          action="https://script.google.com/macros/s/AKfycbwH7Wvy28uffMVk1Sr7bFFti1eH7oy8w7usYi_F4Ys2mi4c2vlZNSBWusFynhmcui9d/exec"
+          method="POST">
+
+          <input type="hidden" name="redirect" value="obrigado.html" />
+
+          <div class="mb-3">
+            <label for="cnpj">CNPJ</label>
+            <input type="text" id="cnpj" name="cnpj" pattern="\d{14}" minlength="14" maxlength="14" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="email">E-mail</label>
+            <input type="text" id="email" name="email" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="produto">Produto</label>
+            <select id="produto" name="produto" required>
+              <option value="">Selecione um Produto</option>
+              <option value="Tributo Justo">Tributo Justo</option>
+              <option value="Ademicon">Ademicon</option>
+              <option value="Gud Energia">Gud Energia</option>
+              <option value="Pluxee">Pluxee</option>
+              <option value="AFFA Consultoria">AFFA Consultoria</option>
+            </select>
+          </div>
+
+          <button type="submit" class="btn btn-primary w-100">Enviar</button>
+
+        </form>
+      </div>
+
+    </section>
+
+    <!-- REDES SOCIAIS -->
+    <section class="social-section">
+      <div class="social-links">
+        <a href="https://www.instagram.com/goldempresas?igsh=MWc4ZHI4dXd4aXdhMg==" target="_blank">
+          <img src="imagens/instagram.png" alt="Instagram" />
+        </a>
+        <a href="https://www.linkedin.com/company/gold-empresas/posts/?feedView=all" target="_blank">
+          <img src="imagens/linkedin.png" alt="LinkedIn" />
+        </a>
+        <a href="https://www.goldempresas.com.br" target="_blank" class="site">
+          <img src="imagens/site.png" alt="Site" />
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="rodape">
+    <img src="imagens/VIVO_EMPRESAS_PRETO.png" alt="Logo Vivo Empresas" class="logo-direita">
+  </footer>
+
+</body>
+
+</html>
